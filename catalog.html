@@ -5,7 +5,7 @@
     <title>Каталог</title>
   </head>
 <body>
-  <header class="page-heder">
+  <header class="page-header">
     <nav class="navigation">
       <ul class="navigation-list">
         <li class="navigation-item">
@@ -24,14 +24,14 @@
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
           <a class="navigation-link" href="#">
-            <span class= "visualy-hiden">
+            <span class= "visually-hidden">
               Поиск
             </span>
           </a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">
-            <span class= "visualy-hiden">
+            <span class= "visually-hidden">
               Избранное
             </span>
           </a>
@@ -46,13 +46,13 @@
 
   </header>
 
-  <main class="main-inner">
+  <main class="may-inner">
     <header class="inner-header">
       <h1 class="inner-header-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link" href="index.html">
-            <span class= "visualy-hiden">
+            <span class= "visually-hidden">
               Главная
             </span>
           </a>
@@ -132,11 +132,11 @@
             <span class="visually-hidden">Изменить минимальную цену
             </span>
           </button>
-          <label class="catalod-filter-label">от
+          <label class="catalog-filter-label">от
             <input class="catalog-filter-input" type="number" name="min-price">
           </label>
 
-          <label class="catalod-filter-label">до
+          <label class="catalog-filter-label">до
             <input class="catalog-filter-input" type="number" name="min-price">
           </label>
 
@@ -153,16 +153,15 @@
           <option value="popular">Сначало популярные</option>
           <option value="expensive">Сначало дорогие</option>
         </select>
-        <button class="visually-hidden" type="submit">Отсортировать продукты
-        </button>
+
       </form>
-      <a href="#" class="button button-table">
+      <a href="#" class="list-table">
         <span class="visually-hidden">Показать таблицу</span>
       </a>
-      <a href="#" class="button">
+      <a href="#" class="list-card">
         <span class="visually-hidden">Показать карточку</span>
       </a>
-      <a href="#" class="button button-light">
+      <a href="#" class="list-light">
         <span class="visually-hidden">Показать список</span>
       </a>
 
@@ -179,6 +178,9 @@
         <a href="#" class="product-card-button button">В избранное</a>
           </li>
 
+          <img class="rating-image-star4" src="#" alt="4 Звезды">
+          <p class="product-rating">Рейтинг: 8,5</p>
+
           <li class="product-card">
             <a class="product-card-link" href="product.html">
               <img class="product-card-image" src="#" alt="#">
@@ -189,6 +191,8 @@
             <a href="#" class="product-card-button button">подробнее</a>
             <a href="#" class="product-card-button button">В избранное</a>
               </li>
+          <img class="rating-image-star4" src="#" alt="3 Звезды">
+          <p class="product-rating">Рейтинг: 8,9</p>
 
               <li class="product-card">
                 <a class="product-card-link" href="product.html">
@@ -200,6 +204,8 @@
                 <a href="#" class="product-card-button button">подробнее</a>
                 <a href="#" class="product-card-button button">В избранное</a>
                   </li>
+          <img class="rating-image-star4" src="#" alt="2 Звезды">
+          <p class="product-rating">Рейтинг: 9,2</p>
 
                   <li class="product-card">
                     <a class="product-card-link" href="product.html">
@@ -211,7 +217,13 @@
                     <a href="#" class="product-card-button button">подробнее</a>
                     <a href="#" class="product-card-button button">В избранное</a>
                       </li>
+          <img class="rating-image-star4" src="#" alt="2 Звезды">
+          <p class="product-rating">Рейтинг: 9,2</p>
+
         </ul>
+        <section class="product-card-list2">
+          <a class="continuation-card-list" href="catalog.html">Загрузить еще</a>
+        </section>
 
         <ul class="pagination">
           <li class="pagination-item">
@@ -234,6 +246,17 @@
           </li>
         </ul>
 
+        <form class="page-selection">
+          <label class="page-selection-card" for="sorting">Гостиниц на странице:</label>
+          <select class="select-control" id="sorting" name="sorting">
+            <option value="number-selection-4">4</option>
+            <option value="number-selection-3">3</option>
+            <option value="number-selection-2">2</option>
+            <option value="number-selection-1">1</option>
+          </select>
+
+        </form>
+
 
       </div>
     </section>
@@ -243,46 +266,45 @@
         честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="POST">
           <p class="newsletter-email">
-            <label class="visually-hiden" for="newsletter-email">
+            <label class="visually-hidden" for="newsletter-email">
             </label>
             <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
           </p>
-          <button class="button-newsletter-button" type="submit">
-            <span>Подписаться</span>
+          <button class="button-newsletter-button" type="submit">Подписаться
           </button>
           </form>
           </section>
-         </main>
+</main>
 
 
   <footer class="page-footer">
     <section class="footer-social">
-      <h2 class="visualy-hiden">Социальные сети</h2>
+      <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="footer-social-list">
         <li class="footer-social-item">
-          <a class="button" href="#">
-            <span class="visualy-hiden">Facebook</span>
+          <a class="social-network" href="#">
+            <span class="visually-hidden">Facebook</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="button" href="#">
-            <span class="visualy-hiden">Twitter</span>
+          <a class="social-network" href="#">
+            <span class="visually-hidden">Twitter</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="button" href="#">
-            <span class="visualy-hiden">Youtube</span>
+          <a class="social-network" href="#">
+            <span class="visually-hidden">Youtube</span>
           </a>
         </li>
       </ul>
       </section>
     <section class="footer-contacts">
-      <h2 class="visualy-hiden">Контакты</h2>
-      <address class="contacts-adress">
+      <h2 class="visually-hidden">Контакты</h2>
+      <address class="contacts-address">
         <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </address>
     </section>
-  <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+  <a class="html-academy-link" href="https://htmlacademy.ru/">.html academy</a>
   </footer>
 
 </body>
